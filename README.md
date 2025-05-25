@@ -1,6 +1,8 @@
-# OnlyOffice Workspace
+# OnlyOffice Groups
 
-Modificado sin Mail y puertos: 8100 y 8443
+Minimal
+
+Ver en "http://localhost:8100"
 <br>
 <br>
 
