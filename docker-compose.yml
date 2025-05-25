@@ -20,7 +20,7 @@ services:
     depends_on:
      - onlyoffice-mysql-server
     environment:
-#     - ONLYOFFICE_CORE_MACHINEKEY=core_secret
+     - ONLYOFFICE_CORE_MACHINEKEY=core_secret
      - MYSQL_SERVER_ROOT_PASSWORD=my-secret-pw
      - MYSQL_SERVER_DB_NAME=onlyoffice
      - MYSQL_SERVER_HOST=onlyoffice-mysql-server
@@ -34,7 +34,7 @@ services:
     tty: true
     restart: unless-stopped
     privileged: true
-#    cgroup: host
+    cgroup: host
     volumes:
      - ./community_data:/var/www/onlyoffice/Data
      - ./community_log:/var/log/onlyoffice
